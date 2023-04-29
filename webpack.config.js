@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -11,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    clean: true,
   },
   devServer: {
     watchFiles: ['src/*.html'],
@@ -76,7 +76,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
-    new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
   optimization: {
