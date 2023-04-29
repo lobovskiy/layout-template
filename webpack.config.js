@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
@@ -13,7 +13,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    watchFiles: ["src/*.html"],
+    watchFiles: ['src/*.html'],
     historyApiFallback: true,
     open: true,
     compress: true,
@@ -23,7 +23,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader',
       },
       {
         test: /\.s[ca]ss$/,
@@ -37,7 +37,7 @@ module.exports = {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader"
+          'css-loader'
         ],
       },
       {
@@ -58,7 +58,7 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env']
           }
