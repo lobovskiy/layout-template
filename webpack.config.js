@@ -71,7 +71,7 @@ module.exports = {
       filename: '[name].css',
     }),
     new HtmlWebpackPlugin({
-      title: 'Songbird App',
+      title: 'My app',
       // favicon: './src/favicon.png',
       template: './src/index.html',
       filename: 'index.html',
