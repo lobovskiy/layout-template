@@ -48,6 +48,13 @@ module.exports = {
         }
       },
       {
+        test: /\.(mp3|aac|ogg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/sound/[hash][ext]'
+        }
+      },
+      {
         test: /\.(woff(2)?|eot|ttf|otf)$/i,
         type: 'asset/resource',
         generator: {
