@@ -2,13 +2,33 @@
 
 ## General info
 
-A template for creating HTML+CSS+JS projects.
+A boilerplate for creating HTML+CSS+JS projects with _development server_ and _SASS/SCSS preprocessor_.
 
 ## Setup
 
-Install the project locally using npm:
+1. Install the project locally using npm:
 
-### `npm install`
+   `npm install`
+
+2. Specify name of your project as a value of the HtmlWebpackPlugin's `title` property in the `\webpack.config.js` file.
+
+   To add a favicon also uncomment a line with the `favicon` property and specify a path to where your favicon file is as its value.
+
+```
+module.exports = {
+  ...
+  plugins: [
+    ...
+    new HtmlWebpackPlugin({
+      title: 'Your project name',
+      favicon: './path/to/your-favicon-file.png',
+      ...
+    }),
+    ...
+  ],
+  ...
+}
+```
 
 ## Available scripts
 
@@ -22,7 +42,7 @@ Builds the app for production to the `dist` folder.
 
 ## Technologies
 
-Project uses for handy development:
+Tools used for handy development:
 
 - [Webpack v5](https://webpack.js.org/) with loaders and plugins:
   - [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
@@ -38,4 +58,4 @@ Project uses for handy development:
 - [ESLint](https://eslint.org/) with ["airbnb-base" config](https://www.npmjs.com/package/eslint-config-airbnb-base)
 - [Prettier](https://editorconfig.org/)
 
-  _Note: to use autoformatting with Prettier please make sure that Prettier is installed and [configured as a default formatter in your IDE](https://prettier.io/docs/en/editors.html)._
+  _Note: to use autoformatting with Prettier please make sure that [Prettier is installed and configured as a default formatter in your IDE](https://prettier.io/docs/en/editors.html)._
