@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -17,6 +16,7 @@ module.exports = {
     historyApiFallback: true,
     open: true,
     compress: true,
+    hot: true,
     port: 8080,
   },
   module: {
@@ -83,7 +83,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
   optimization: {
     minimize: true,
