@@ -4,31 +4,54 @@
 
 A boilerplate for creating HTML+CSS+JS projects with _development server_ and _SASS/SCSS preprocessor_.
 
-## Setup
+## Quick start with creating new project using this template
 
-1. Install the project locally using npm:
+1. Create new repository on Github and save github directions for starting work with the new repository
+
+2. Clone this template project to the new local project folder on your PC:
+
+   `git clone <https://github.com/this-repo-url.git> <path/to/your/new-project-folder-name>`
+
+3. Delete hidden folder `.git` from the root directory of the cloned repository
+
+4. Specify title of your app inside the `title` tag of `src/index.html` file:
+
+   `<title>Your app title</title>`
+
+5. Specify name and version of your project in the `package.json` settings:
+
+   ```
+   {
+     "name": "new-project-name",
+     "version": "1.0.0",
+     ...
+   }
+   ```
+
+6. To add a favicon in `webpack.config.js` uncomment a line with the HtmlWebpackPlugin's `favicon` property and specify a path to where your favicon file is in its value:
+
+   ```
+   module.exports = {
+     ...
+     plugins: [
+       ...
+       new HtmlWebpackPlugin({
+         favicon: './path/to/your-favicon-file.png',
+         ...
+       }),
+       ...
+     ],
+     ...
+   }
+   ```
+
+7. Install dependencies using npm:
 
    `npm install`
 
-2. Specify name of your project as a value of the HtmlWebpackPlugin's `title` property in the `\webpack.config.js` file.
+8. Add information about your project here in README.md
 
-   To add a favicon also uncomment a line with the `favicon` property and specify a path to where your favicon file is as its value.
-
-```
-module.exports = {
-  ...
-  plugins: [
-    ...
-    new HtmlWebpackPlugin({
-      title: 'Your project name',
-      favicon: './path/to/your-favicon-file.png',
-      ...
-    }),
-    ...
-  ],
-  ...
-}
-```
+9. Push repository to Github in accordance with directions for starting work given in the first step.
 
 ## Available scripts
 
