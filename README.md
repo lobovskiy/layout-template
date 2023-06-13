@@ -53,6 +53,7 @@ Tools used for handy development:
   - [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)
   - [sass-loader](https://webpack.js.org/loaders/sass-loader/)
 - [Sass](https://sass-lang.com/)
+- [normalize.css](https://www.npmjs.com/package/normalize.css)
 - [Babel](https://babeljs.io/) with polyfills and "preset-env" preset
 - [EditorConfig](https://editorconfig.org/)
 - [ESLint](https://eslint.org/) with ["airbnb-base" config](https://www.npmjs.com/package/eslint-config-airbnb-base)
