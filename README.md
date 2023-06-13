@@ -8,7 +8,7 @@ A boilerplate for creating HTML+CSS+JS projects with _development server_ and _S
 
 1. Create new repository on Github and save github directions for starting work with the new repository
 
-2. Clone this template project to the new local project folder on your PC:
+2. Clone this template project to a new local project folder on your PC:
 
    `git clone <https://github.com/this-repo-url.git> <path/to/your/new-project-folder-name>`
 
