@@ -1,4 +1,6 @@
 {
+  "name": "layout-template-ts",
+  "version": "1.0.0",
   "browserslist": [
     "defaults",
     "IE 10-11"
