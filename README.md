@@ -6,19 +6,19 @@ A boilerplate for creating HTML+CSS+JS projects with _development server_ and _S
 
 ## Quick start with creating new project using this template
 
-1. Create new repository on Github and save github directions for starting work with the new repository
+1. Create a new repository on Github and save github directions for starting work with the new repository
 
-2. Clone this template project to a new local project folder on your PC:
+2. Clone this template project to your new local project folder:
 
    `git clone <https://github.com/this-repo-url.git> <path/to/your/new-project-folder-name>`
 
-3. Delete hidden folder `.git` from the root directory of the cloned repository
+3. Delete the hidden `.git` folder from the root directory of the cloned repository
 
-4. Specify title of your app inside the `title` tag of `src/index.html` file:
+4. Specify the title of your app inside the `title` tag of the `src/index.html` file:
 
    `<title>Your app title</title>`
 
-5. Specify name and version of your project in the `package.json` settings:
+5. Specify the name and the version of your project in the `package.json` settings:
 
    ```
    {
@@ -28,7 +28,7 @@ A boilerplate for creating HTML+CSS+JS projects with _development server_ and _S
    }
    ```
 
-6. To add a favicon in `webpack.config.js` uncomment a line with the HtmlWebpackPlugin's `favicon` property and specify a path to where your favicon file is in its value:
+6. To add a favicon in the `webpack.config.js` uncomment a line with the HtmlWebpackPlugin's `favicon` property and specify the path to where your favicon file is in its value:
 
    ```
    module.exports = {
@@ -49,9 +49,9 @@ A boilerplate for creating HTML+CSS+JS projects with _development server_ and _S
 
    `npm install`
 
-8. Add information about your project here in README.md
+8. Add information about your project here in the README.md
 
-9. Push repository to Github in accordance with directions for starting work given in the first step.
+9. Push the repository to Github in accordance with directions for starting work given in the first step.
 
 ## Available scripts
 
