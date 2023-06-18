@@ -72,6 +72,7 @@ Tools used for handy development:
   - [html-loader](https://webpack.js.org/loaders/html-loader/)
   - [html-webpack-plugin](https://webpack.js.org/plugins/html-webpack-plugin/)
   - [css-loader](https://webpack.js.org/loaders/css-loader/)
+  - [postcss-loader](https://webpack.js.org/loaders/postcss-loader/) with [autoprefixer](https://webpack.js.org/loaders/postcss-loader/#autoprefixer)
   - [css-minimizer-webpack-plugin](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/)
   - [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)
   - [sass-loader](https://webpack.js.org/loaders/sass-loader/)

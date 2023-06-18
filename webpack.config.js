@@ -23,6 +23,14 @@ const baseConfig = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: ["autoprefixer"],
+              },
+            },
+          },
           'sass-loader',
         ]
       },
@@ -30,7 +38,15 @@ const baseConfig = {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: ["autoprefixer"],
+              },
+            },
+          },
         ],
       },
       {
