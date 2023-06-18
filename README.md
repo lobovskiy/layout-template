@@ -70,7 +70,7 @@ Tools used for handy development:
 - [Webpack v5](https://webpack.js.org/) with loaders and plugins:
   - [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
   - [html-loader](https://webpack.js.org/loaders/html-loader/)
-  - [html-webpack](https://webpack.js.org/plugins/html-webpack-plugin/)
+  - [html-webpack-plugin](https://webpack.js.org/plugins/html-webpack-plugin/)
   - [css-loader](https://webpack.js.org/loaders/css-loader/)
   - [css-minimizer-webpack-plugin](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/)
   - [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)
