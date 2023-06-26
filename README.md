@@ -4,7 +4,7 @@
 
 A boilerplate for creating HTML+CSS+JS projects with _development server_ and _SASS/SCSS preprocessor_.
 
-## Quick start with creating new project using this template
+## Quick start with creating a new project using this template
 
 1. Create a new repository on Github and save github directions for starting work with the new repository
 
