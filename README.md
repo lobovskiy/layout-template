@@ -81,6 +81,6 @@ Tools used for handy development:
 - [Babel](https://babeljs.io/) with polyfills and "preset-env" preset
 - [EditorConfig](https://editorconfig.org/)
 - [ESLint](https://eslint.org/) with ["airbnb-base" config](https://www.npmjs.com/package/eslint-config-airbnb-base)
-- [Prettier](https://editorconfig.org/)
+- [Prettier](https://prettier.io/)
 
   _Note: to use autoformatting with Prettier please make sure that [Prettier is installed and configured as a default formatter in your IDE](https://prettier.io/docs/en/editors.html)._
